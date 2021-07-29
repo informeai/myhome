@@ -26,7 +26,7 @@ const Card = ({name, img}: CardProps): JSX.Element =>{
 	return(
 		<div className="card" id={name}>
 		<img src={img} onClick={movePage} onMouseEnter={moveEnter} onMouseLeave={moveLeave}/>
-		<span>{name}</span>
+		<span>{name[0].toUpperCase() + name.slice(1).toLowerCase()}</span>
 		</div>
 	)
 }
