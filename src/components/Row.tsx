@@ -8,10 +8,10 @@ import imgConfig from '../assets/config.jpg'
 const Row = ()=>{
 	return(
 		<ul className="row">
-		<Card name="movies" img={imgMovie}/>
+		<Card name="movie" img={imgMovie}/>
 		<Card name="music" img={imgMusic}/>
-		<Card name="photos" img={imgPhotos}/>
-		<Card name="settings" img={imgConfig}/>
+		<Card name="photo" img={imgPhotos}/>
+		<Card name="setting" img={imgConfig}/>
 		</ul>
 	)
 }

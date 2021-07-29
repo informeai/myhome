@@ -18,10 +18,14 @@ const Card = ({name, img}: CardProps): JSX.Element =>{
 			let span = target.nextSibling as HTMLElement
 			span!.style.transform = "translateY(0px)"
 		}
+
+		const movePage = (e:MouseEvent<HTMLElement>)=>{
+			window.location.href = `/${name}`
+		}
 		
 	return(
-		<div className="card">
-		<img src={img} onMouseEnter={moveEnter} onMouseLeave={moveLeave}/>
+		<div className="card" id={name}>
+		<img src={img} onClick={movePage} onMouseEnter={moveEnter} onMouseLeave={moveLeave}/>
 		<span>{name}</span>
 		</div>
 	)

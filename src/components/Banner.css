@@ -14,6 +14,7 @@
 	height: 50vh;
 }
 #banner img{
+	width: 100vw;
 	object-fit: cover;
 	overflow: hidden;
 	transition: 0.3s;
