@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css'
-import Banner from './components/Banner'
-import Content from './components/Content'
+import Home from './views/Home'
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
+
 const App = ()=> {
   return (
-  	<>
-  	<Banner/>
-	<Content/>
-	</>
+  	<BrowserRouter>
+  		<Switch>
+  			<Route path="/">
+  				<Home/>
+  			</Route>
+  		</Switch>
+	</BrowserRouter>
   );
 }
 
