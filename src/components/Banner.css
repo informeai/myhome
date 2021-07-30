@@ -5,7 +5,7 @@
 	width: 100vw;
 	height: 45vh;
 	opacity: 0.7;
-	background-color: #e4e4e4;
+	background-color: #fff;
 	transition: 0.5s;
 	cursor: pointer;
 }
@@ -15,7 +15,9 @@
 }
 #banner img{
 	width: 100vw;
-	object-fit: cover;
+	height: 100vh;
+	align-items: center;
+	object-fit: contain;
 	overflow: hidden;
 	transition: 0.3s;
 }

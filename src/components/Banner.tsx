@@ -1,11 +1,11 @@
 import React from 'react'
 import './Banner.css'
-import banner1 from '../assets/banner1.jpg'
+import bannerGeral from '../assets/banner-geral.png'
 
 const Banner = () =>{
 	return (
 		<div id="banner">
-		<img id="image" src={banner1}/>
+		<img id="image" src={bannerGeral}/>
 		</div>
 	)
 }
